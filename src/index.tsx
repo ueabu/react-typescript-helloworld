@@ -19,10 +19,9 @@ class MainComponent extends React.Component<MainProps, MainState> {
       </div>
   }
   increment = () => {
-    this.setState(state => ({val: this.state.val + 1}));
+    this.setState(state => ({val: state.val + 1}));
   }
 }
-  
 
 ReactDOM.render(
   <MainComponent name="Typescript 3.something" />,
